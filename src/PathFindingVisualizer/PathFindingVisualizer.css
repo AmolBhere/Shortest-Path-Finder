@@ -1,0 +1,18 @@
+.grid-container {
+    background-color: #ffffff;
+    margin: auto;
+    align-items: center;
+  }
+  
+.grid {
+  white-space: pre;
+}
+
+.secondDiv{
+  margin-top: -3%;
+  margin-bottom: 5px;
+}
+
+button {
+  margin: 10px;
+}
