@@ -371,7 +371,7 @@ export default class PathfindingVisualizer extends Component {
             type="button"
             className="primaryButton"
             onClick={() => this.visualize('BFS')}>
-            Bread First Search
+            Breadth First Search
             </button>
             <button
             type="button"
