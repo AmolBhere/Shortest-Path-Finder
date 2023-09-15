@@ -5,8 +5,10 @@ import {dfs} from './Algorithms/dfs';
 import {dijkstra} from './Algorithms/dijkstra';
 import './PathfindingVisualizer.css';
 
-export default class PathfindingVisualizer extends Component {
-  constructor() {
+export default class PathfindingVisualizer extends Component
+{
+  constructor()
+  {
     super();
     this.state = {
       grid: [],
@@ -31,23 +33,28 @@ export default class PathfindingVisualizer extends Component {
     this.toggleIsRunning = this.toggleIsRunning.bind(this);
   }
 
-  componentDidMount() {
+  componentDidMount()
+  {
     const grid = this.getInitialGrid();
     this.setState({grid});
   }
 
-  toggleIsRunning() {
+  toggleIsRunning()
+  {
     this.setState({isRunning: !this.state.isRunning});
   }
 
   /******************** Set up the initial grid ********************/
   getInitialGrid = (
     rowCount = this.state.ROW_COUNT,
-    colCount = this.state.COLUMN_COUNT, ) => {
+    colCount = this.state.COLUMN_COUNT, ) =>
+    {
     const initialGrid = [];
-    for (let row = 0; row < rowCount; row++) {
+    for (let row = 0; row < rowCount; row++)
+    {
       const currentRow = [];
-      for (let col = 0; col < colCount; col++) {
+      for (let col = 0; col < colCount; col++)
+      {
         currentRow.push(this.createNode(row, col));
       }
       initialGrid.push(currentRow);
