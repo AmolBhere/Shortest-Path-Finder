@@ -1,7 +1,7 @@
 .node {
     width: 25px;
     height: 25px;
-    outline: 1.75px solid #000000;
+    outline: 2px solid #000000;
     display: inline-block;
   }
   
@@ -10,7 +10,7 @@
   }
   
   .node-start {
-    background-color: #22ff00;
+    background-color: #0015ff;
   }
   
   .node-visited {
@@ -55,19 +55,19 @@
   @keyframes shortestPath {
     0% {
       transform: scale(0.4);
-      background-color: #9500ff;
+      background-color: #00ff04;
       border-radius: 25%;
     }
   
     50% {
       transform: scale(0.8);
-      background-color: #9500ff;
+      background-color: #00ff04;
       border-radius: 10%;
     }
   
     100% {
       transform: scale(1);
-      background-color: #9500ff;
+      background-color: #00ff04;
     }
   }
   
