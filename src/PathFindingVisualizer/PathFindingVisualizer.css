@@ -1,14 +1,14 @@
 .grid-container {
-    background-color: #ffffff;
-    margin: auto;
-    align-items: center;
-  }
-  
+  background-color: aquamarine;
+  margin: auto;
+  align-items: center;
+}
+
 .grid {
   white-space: pre;
 }
 
-.secondDiv{
+.secondDiv {
   margin-top: -2%;
   margin-bottom: 5px;
 }
