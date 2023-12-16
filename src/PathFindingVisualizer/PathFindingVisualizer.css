@@ -1,21 +1,47 @@
-.grid-container {
-  background-color: aquamarine;
-  margin: auto;
+/* Default styles for larger screens */
+.firstDiv {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.grid {
-  white-space: pre;
-}
-
 .secondDiv {
-  margin-top: -2%;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-button {
-  margin: 10px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  font-weight: 200;
+.primaryButton,
+.secondaryButton {
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton {
+  background-color: #006eff;
+  color: white;
+}
+
+.secondaryButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  background-color: #45a049;
+}
+
+.grid-container {
+  margin-top: 10px;
+}
+
+.grid {
+  border-collapse: collapse;
 }

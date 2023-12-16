@@ -16,14 +16,13 @@ export default class PathfindingVisualizer extends Component {
       FINISH_NODE_COL: 15,
       mouseIsPressed: false,
       ROW_COUNT: 20,
-      COLUMN_COUNT: 40,
+      COLUMN_COUNT: 50,
       isRunning: false,
       isStartNode: false,
       isFinishNode: false,
       isWallNode: false,
       currRow: 0,
       currCol: 0,
-      isDesktopView: true,
     };
 
     this.handleMouseDown = this.handleMouseDown.bind(this);
@@ -291,9 +290,6 @@ export default class PathfindingVisualizer extends Component {
       switch (algo) {
         case "Dijkstra":
           visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
-          break;
-        case "AStar":
-          visitedNodesInOrder = AStar(grid, startNode, finishNode);
           break;
         case "BFS":
           visitedNodesInOrder = bfs(grid, startNode, finishNode);
